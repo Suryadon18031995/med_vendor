@@ -1,0 +1,266 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv=“Expires” content=”-1″>
+    <meta http-equiv=“Pragma” content=”no-cache”>
+     <title>Arabella Bouquets</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <style>
+        body
+        {
+          background-color:#fff;
+        }
+        #payment-form {
+        border: 2px solid #003b5c; 
+        padding: 5px 10px; 
+        border-radius: 5px; 
+        background: white;
+        color: #333;
+      }
+      .checked {
+        color: orange;
+      }
+      .cart-info.quantity {
+   
+   border: #2fafcc 3px solid;
+}
+
+.cart-info {
+   text-align: right;
+   display: inline-block;
+border-radius: 15px;
+  
+}
+.btn-increment-decrement {
+   display: inline-block;
+   padding: 5px 0px;
+   background: #8AB77D;
+   width: 30px;
+   text-align: center;
+   cursor: pointer;
+border-top-left-radius: 12px;
+border-bottom-left-radius: 12px;
+}
+.input-quantity {
+   border: 0px;
+   width: 30px;
+   display: inline-block;
+   margin: 0;
+   box-sizing: border-box;
+   text-align: center;
+}
+.btn-increment-increment {
+   display: inline-block;
+   padding: 5px 0px;
+   background: #8AB77D;
+   width: 30px;
+   text-align: center;
+   cursor: pointer;
+border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
+}
+
+    </style>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="content-wrapper"></div>
+
+    <script>
+        function myFunction(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className = 
+            x.previousElementSibling.className.replace("w3-black", "w3-red");
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className = 
+            x.previousElementSibling.className.replace("w3-red", "w3-black");
+          }
+        }
+        </script>
+        <script type="text/javascript">
+          $(function() {
+             var enableDays = ['2019-11-30'];
+             var disabledDays = ['2019-11-28', '2019-11-29'];
+          
+             function formatDate(d) {
+               var day = String(d.getDate())
+               //add leading zero if day is is single digit
+          
+               if (day.length == 1)
+                 day = '0' + day
+               var month = String((d.getMonth()+1))
+               //add leading zero if month is is single digit
+               if (month.length == 1)
+                 month = '0' + month
+               return d.getFullYear() + '-' + month + "-" + day;
+             }
+          
+             $('.datepicker').datepicker({
+                  format: 'mm/dd/yyyy',
+                   beforeShowDay: function(date){
+                    var dayNr = date.getDay();
+                      if (dayNr==0  ||  dayNr==6){
+                          if (enableDays.indexOf(formatDate(date)) >= 0) {
+                              return true;
+                          }
+                          return false;
+                      }
+                      if (disabledDays.indexOf(formatDate(date)) >= 0) {
+                         return false;
+                      }
+                      return true;
+                  }
+             });
+          });
+          </script>
+
+</body>
+
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv=“Expires” content=”-1″>
+    <meta http-equiv=“Pragma” content=”no-cache”>
+     <title>Arabella Bouquets</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <style>
+        body
+        {
+          background-color:#fff;
+        }
+        #payment-form {
+        border: 2px solid #003b5c; 
+        padding: 5px 10px; 
+        border-radius: 5px; 
+        background: white;
+        color: #333;
+      }
+      .checked {
+        color: orange;
+      }
+      .cart-info.quantity {
+   
+   border: #2fafcc 3px solid;
+}
+
+.cart-info {
+   text-align: right;
+   display: inline-block;
+border-radius: 15px;
+  
+}
+.btn-increment-decrement {
+   display: inline-block;
+   padding: 5px 0px;
+   background: #8AB77D;
+   width: 30px;
+   text-align: center;
+   cursor: pointer;
+border-top-left-radius: 12px;
+border-bottom-left-radius: 12px;
+}
+.input-quantity {
+   border: 0px;
+   width: 30px;
+   display: inline-block;
+   margin: 0;
+   box-sizing: border-box;
+   text-align: center;
+}
+.btn-increment-increment {
+   display: inline-block;
+   padding: 5px 0px;
+   background: #8AB77D;
+   width: 30px;
+   text-align: center;
+   cursor: pointer;
+border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
+}
+
+    </style>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="content-wrapper"></div>
+
+    <script>
+        function myFunction(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className = 
+            x.previousElementSibling.className.replace("w3-black", "w3-red");
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className = 
+            x.previousElementSibling.className.replace("w3-red", "w3-black");
+          }
+        }
+        </script>
+        <script type="text/javascript">
+          $(function() {
+             var enableDays = ['2019-11-30'];
+             var disabledDays = ['2019-11-28', '2019-11-29'];
+          
+             function formatDate(d) {
+               var day = String(d.getDate())
+               //add leading zero if day is is single digit
+          
+               if (day.length == 1)
+                 day = '0' + day
+               var month = String((d.getMonth()+1))
+               //add leading zero if month is is single digit
+               if (month.length == 1)
+                 month = '0' + month
+               return d.getFullYear() + '-' + month + "-" + day;
+             }
+          
+             $('.datepicker').datepicker({
+                  format: 'mm/dd/yyyy',
+                   beforeShowDay: function(date){
+                    var dayNr = date.getDay();
+                      if (dayNr==0  ||  dayNr==6){
+                          if (enableDays.indexOf(formatDate(date)) >= 0) {
+                              return true;
+                          }
+                          return false;
+                      }
+                      if (disabledDays.indexOf(formatDate(date)) >= 0) {
+                         return false;
+                      }
+                      return true;
+                  }
+             });
+          });
+          </script>
+
+</body>
+
+>>>>>>> 26a72402f14215350a5e88c808d1bb904903918a
+</html>

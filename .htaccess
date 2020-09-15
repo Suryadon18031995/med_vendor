@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+=======
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+>>>>>>> 26a72402f14215350a5e88c808d1bb904903918a
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
